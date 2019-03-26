@@ -6,10 +6,7 @@ import "./App.css";
 import HomePage from "./pages/Home";
 import Step1 from "./pages/Step1";
 import Step2 from "./pages/Step2";
-
-function Users() {
-  return <h2>Users</h2>;
-}
+import Step3 from "./pages/Step3";
 
 class App extends Component {
   render() {
@@ -38,7 +35,7 @@ class App extends Component {
             </nav>
             <Route path="/step-1" component={Step1} />
             <Route path="/step-2" component={Step2} />
-            <Route path="/step-3" component={Users} />
+            <Route path="/step-3" component={Step3} />
             <Route exact path="/" component={HomePage} />
           </div>
         </Router>
